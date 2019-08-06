@@ -57,28 +57,38 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-sm-10">
-            <form id="userInfo">
+            <form id="userInfo" class="needs-validation" novalidate>
               <div class="form-row form-group">
                 <div class="col">
                   <label for="skills">Choose one of your secret skills from the list below</label>
-                  <select class="form-control" id="skills">
+                  <select class="form-control" id="skills" required>
+                    <option value="">Tell us your secret...</option>
                     <option value="INFJ">Speaking to large groups</option>
                     <option value="INTP">Making up great stories</option>
                     <option value="INTJ">Following through on things</option>
                     <option value="ISTP">Repairing anything</option>
                     <option value="ENTP">Great at dreaming up ideas</option>
                   </select>
+
+                  <div class="invalid-feedback">
+  Don't be shy, tell us your secret skills
+</div>
                 </div>
               </div>
               <div class="form-row form-group">
                 <div class="col">
                   <label for="skills">Which would you prefer to date</label>
-                  <select class="form-control" id="gender">
+                  <select class="form-control" id="gender" required>
+                    <option value="">Pick your dream partner...</option>
                     <option value="female">A Strong Woman</option>
                     <option value="male">A Manly Man</option>
                     <option value="princess">A Beautiful Sweet Woman</option>
                     <option value="prince">A Rich Handsome Man</option>
                   </select>
+
+                  <div class="invalid-feedback">
+  Please please tell us your book type
+</div>
                 </div>
               </div>
               <div class="row justify-content-center">
